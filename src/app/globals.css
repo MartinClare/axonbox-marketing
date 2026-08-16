@@ -1,26 +1,77 @@
 @import "tailwindcss";
 
 :root {
+  --axon-ink: #003049;
+  --axon-blue: #02445f;
+  --axon-steel: #2a5a72;
+  --axon-accent: #f77f00;
+  --axon-signal: #fece32;
+  --axon-danger: #d62828;
+  --axon-line: #e2e8f0;
   --background: #ffffff;
-  --foreground: #171717;
+  --foreground: #003049;
 }
 
 @theme inline {
   --color-background: var(--background);
   --color-foreground: var(--foreground);
-  --font-sans: var(--font-geist-sans);
-  --font-mono: var(--font-geist-mono);
+  --color-axon-ink: var(--axon-ink);
+  --color-axon-blue: var(--axon-blue);
+  --color-axon-steel: var(--axon-steel);
+  --color-axon-accent: var(--axon-accent);
+  --color-axon-signal: var(--axon-signal);
+  --color-axon-line: var(--axon-line);
+  --font-sans: var(--font-plex);
 }
 
-@media (prefers-color-scheme: dark) {
-  :root {
-    --background: #0a0a0a;
-    --foreground: #ededed;
-  }
+html {
+  scroll-behavior: smooth;
 }
 
 body {
   background: var(--background);
   color: var(--foreground);
-  font-family: Arial, Helvetica, sans-serif;
+  font-family: var(--font-plex), "IBM Plex Sans", "PingFang TC", "Segoe UI", sans-serif;
+}
+
+@keyframes fade-up {
+  from {
+    opacity: 0;
+    transform: translateY(18px);
+  }
+  to {
+    opacity: 1;
+    transform: translateY(0);
+  }
+}
+
+@keyframes fade-in {
+  from {
+    opacity: 0;
+  }
+  to {
+    opacity: 1;
+  }
+}
+
+.anim-fade-up {
+  animation: fade-up 0.7s ease-out both;
+}
+
+.anim-fade-up-delay {
+  animation: fade-up 0.7s ease-out 0.15s both;
+}
+
+.anim-fade-up-delay-2 {
+  animation: fade-up 0.7s ease-out 0.3s both;
+}
+
+.anim-fade-in {
+  animation: fade-in 1s ease-out both;
+}
+
+.hero-scrim {
+  background:
+    linear-gradient(90deg, rgba(0, 48, 73, 0.88) 0%, rgba(0, 48, 73, 0.55) 48%, rgba(0, 48, 73, 0.25) 100%),
+    linear-gradient(180deg, rgba(0, 48, 73, 0.35) 0%, transparent 40%, rgba(0, 48, 73, 0.55) 100%);
 }
