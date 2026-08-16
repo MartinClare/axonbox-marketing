@@ -1,6 +1,5 @@
 import {
   APP_NAME,
-  APP_TAGLINE,
   CONTACT_EMAIL,
   DEMO_EMAIL,
   DEMO_PASSWORD,
@@ -37,25 +36,26 @@ export default function HomePage() {
     <div className="min-h-dvh bg-white text-[var(--axon-ink)]">
       <SiteHeader />
 
-      {/* Hero — brand first, full-bleed image, one composition */}
+      {/* Hero — brand first, full-bleed photo (no baked-in slide text) */}
       <section className="relative min-h-dvh overflow-hidden">
         {/* eslint-disable-next-line @next/next/no-img-element */}
         <img
-          src="/media/ppt-01-ai-camera.jpg"
+          src="/media/hero-site.jpg"
           alt=""
-          className="anim-fade-in absolute inset-0 h-full w-full object-cover"
+          className="anim-fade-in absolute inset-0 h-full w-full object-cover object-center"
         />
         <div className="hero-scrim absolute inset-0" />
-        <div className="relative z-10 flex min-h-dvh flex-col justify-end px-5 pb-16 pt-28 sm:px-8 sm:pb-20 lg:justify-center lg:pb-0">
+        <div className="relative z-10 flex min-h-dvh flex-col justify-end px-5 pb-16 pt-28 sm:px-8 sm:pb-20 lg:justify-center lg:pb-24 lg:pt-32">
           <div className="mx-auto w-full max-w-6xl">
             <p className="anim-fade-up text-[11px] font-bold uppercase tracking-[0.22em] text-[var(--axon-signal)]">
-              {APP_NAME}
+              Site Ops AI
             </p>
-            <h1 className="anim-fade-up-delay mt-4 max-w-3xl text-4xl font-semibold leading-[1.08] tracking-tight text-white sm:text-5xl lg:text-6xl">
-              One site photo starts construction admin.
+            <h1 className="anim-fade-up-delay mt-3 max-w-3xl text-4xl font-semibold leading-[1.12] tracking-tight text-white sm:text-5xl lg:text-[3.5rem]">
+              <span className="block text-[var(--axon-signal)]">{APP_NAME}</span>
+              <span className="mt-2 block">One site photo starts construction admin.</span>
             </h1>
-            <p className="anim-fade-up-delay-2 mt-5 max-w-xl text-base leading-relaxed text-white/75 sm:text-lg">
-              {APP_TAGLINE}. Turn capture into a Case — assign, prove after, close, keep evidence.
+            <p className="anim-fade-up-delay-2 mt-5 max-w-lg text-base leading-relaxed text-white/80 sm:text-lg">
+              Turn capture into a Case — assign, prove after, close, keep evidence.
             </p>
             <div className="anim-fade-up-delay-2 mt-8 flex flex-wrap items-center gap-3">
               <a
