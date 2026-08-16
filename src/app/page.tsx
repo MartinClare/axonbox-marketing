@@ -47,19 +47,19 @@ export default function HomePage() {
         <div className="hero-scrim absolute inset-0" />
         <div className="relative z-10 flex min-h-dvh flex-col justify-end px-5 pb-16 pt-28 sm:px-8 sm:pb-20 lg:justify-center lg:pb-24 lg:pt-32">
           <div className="mx-auto w-full max-w-6xl">
-            <p className="anim-fade-up text-[11px] font-bold uppercase tracking-[0.22em] text-[var(--axon-signal)]">
+            <p className="text-[11px] font-bold uppercase tracking-[0.22em] text-[var(--axon-signal)]">
               Site Ops AI
             </p>
-            <p className="anim-fade-up mt-4 text-4xl font-semibold tracking-tight text-[var(--axon-signal)] sm:text-5xl lg:text-[3.5rem]">
+            <p className="mt-5 text-4xl font-semibold tracking-tight text-[var(--axon-signal)] sm:text-5xl lg:text-6xl">
               {APP_NAME}
             </p>
-            <h1 className="anim-fade-up-delay mt-4 max-w-3xl text-3xl font-semibold leading-snug tracking-tight text-white sm:text-4xl lg:text-5xl lg:leading-[1.15]">
+            <h1 className="mt-6 max-w-3xl text-3xl font-semibold leading-snug tracking-tight text-white sm:mt-7 sm:text-4xl lg:text-5xl lg:leading-[1.2]">
               One site photo starts construction admin.
             </h1>
-            <p className="anim-fade-up-delay-2 mt-5 max-w-lg text-base leading-relaxed text-white/80 sm:text-lg">
+            <p className="mt-6 max-w-lg text-base leading-relaxed text-white/80 sm:text-lg">
               Turn capture into a Case — assign, prove after, close, keep evidence.
             </p>
-            <div className="anim-fade-up-delay-2 mt-8 flex flex-wrap items-center gap-3">
+            <div className="mt-8 flex flex-wrap items-center gap-3">
               <a
                 href={DEMO_URL}
                 className="inline-flex min-h-12 items-center justify-center rounded-xl bg-[var(--axon-accent)] px-6 text-sm font-semibold text-white shadow-lg shadow-black/25 transition hover:brightness-110"
