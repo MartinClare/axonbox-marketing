@@ -50,9 +50,11 @@ export default function HomePage() {
             <p className="anim-fade-up text-[11px] font-bold uppercase tracking-[0.22em] text-[var(--axon-signal)]">
               Site Ops AI
             </p>
-            <h1 className="anim-fade-up-delay mt-3 max-w-3xl text-4xl font-semibold leading-[1.12] tracking-tight text-white sm:text-5xl lg:text-[3.5rem]">
-              <span className="block text-[var(--axon-signal)]">{APP_NAME}</span>
-              <span className="mt-2 block">One site photo starts construction admin.</span>
+            <p className="anim-fade-up mt-4 text-4xl font-semibold tracking-tight text-[var(--axon-signal)] sm:text-5xl lg:text-[3.5rem]">
+              {APP_NAME}
+            </p>
+            <h1 className="anim-fade-up-delay mt-4 max-w-3xl text-3xl font-semibold leading-snug tracking-tight text-white sm:text-4xl lg:text-5xl lg:leading-[1.15]">
+              One site photo starts construction admin.
             </h1>
             <p className="anim-fade-up-delay-2 mt-5 max-w-lg text-base leading-relaxed text-white/80 sm:text-lg">
               Turn capture into a Case — assign, prove after, close, keep evidence.
