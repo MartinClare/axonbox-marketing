@@ -4,8 +4,10 @@ Standalone marketing / pitch site for **AxonBox**. Independent of the product ap
 
 | Site | Host | URL |
 |---|---|---|
-| Marketing (this repo) | **Vercel** | after deploy: `*.vercel.app` |
+| Marketing (this repo) | **Vercel** | https://axonbox-marketing.vercel.app |
 | Product app | Railway | https://axonbox-production.up.railway.app |
+
+GitHub: https://github.com/MartinClare/axonbox-marketing
 
 ## Local
 
@@ -18,12 +20,15 @@ Open [http://localhost:3000](http://localhost:3000).
 
 ## Deploy on Vercel
 
-1. Push this repo to GitHub (e.g. `MartinClare/axonbox-marketing`).
-2. In [Vercel](https://vercel.com): **Add New Project** → import the repo.
-3. Framework preset: **Next.js** (defaults are fine). No env vars required.
-4. Deploy. Set the production domain when ready.
+Already linked to the `martinclares-projects/axonbox-marketing` Vercel project.
 
-Demo CTA points at the Railway app. Demo login shown on the site: `admin@axon.demo` / `demo1234`.
+```bash
+npx vercel deploy --prod
+```
+
+Or connect the GitHub repo in the Vercel dashboard for auto-deploys on push to `main`.
+
+Demo CTA points at the Railway app. Demo login on the site: `admin@axon.demo` / `demo1234`.
 
 ## Content
 
