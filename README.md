@@ -4,11 +4,31 @@ Standalone marketing / pitch site for **AxonBox**. Independent of the product ap
 
 | Site | Host | URL |
 |---|---|---|
-| Marketing (this repo) | **Vercel** | https://axonbox-marketing.vercel.app |
+| Marketing (this repo) | **Vercel** | https://axoncase.com (DNS pending) · https://axonbox-marketing.vercel.app |
 | Product app | Railway | https://axonbox-production.up.railway.app |
 
 GitHub: https://github.com/MartinClare/axonbox-marketing
 
+## Custom domain (`axoncase.com`)
+
+Attached in Vercel to project `axonbox-marketing`. At the DNS host (**Instra** / `*.instradns.com`), set:
+
+| Type | Name | Value |
+|---|---|---|
+| **A** | `@` | `216.150.1.1` |
+| **A** | `@` | `216.150.16.1` |
+| **CNAME** | `www` | `29aba2f90e828185.vercel-dns-016.com` |
+
+Remove any old **A** record pointing `@` to `198.50.252.64`.
+
+Then run:
+
+```bash
+npx vercel domains verify axoncase.com
+npx vercel domains verify www.axoncase.com
+```
+
+Propagation can take a few minutes to a few hours.
 ## Local
 
 ```bash
