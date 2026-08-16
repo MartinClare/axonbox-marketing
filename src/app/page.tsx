@@ -1,6 +1,6 @@
 import {
   APP_NAME,
-  CONTACT_EMAIL,
+  CONTACT_WHATSAPP_URL,
   DEMO_EMAIL,
   DEMO_PASSWORD,
   DEMO_URL,
@@ -67,7 +67,9 @@ export default function HomePage() {
                 Try the live demo
               </a>
               <a
-                href={`mailto:${CONTACT_EMAIL}?subject=${encodeURIComponent("AxonBox demo")}`}
+                href={CONTACT_WHATSAPP_URL}
+                target="_blank"
+                rel="noopener noreferrer"
                 className="inline-flex min-h-12 items-center justify-center rounded-xl border border-white/30 bg-white/10 px-6 text-sm font-semibold text-white backdrop-blur-sm transition hover:bg-white/20"
               >
                 Talk to us
@@ -271,7 +273,9 @@ export default function HomePage() {
                 Open demo
               </a>
               <a
-                href={`mailto:${CONTACT_EMAIL}?subject=${encodeURIComponent("AxonBox demo")}`}
+                href={CONTACT_WHATSAPP_URL}
+                target="_blank"
+                rel="noopener noreferrer"
                 className="inline-flex min-h-12 items-center justify-center rounded-xl border border-white/25 px-6 text-sm font-semibold text-white transition hover:bg-white/10"
               >
                 Talk to us
