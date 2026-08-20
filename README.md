@@ -1,6 +1,6 @@
-# AxonBox marketing site
+# AxonCase marketing site
 
-Standalone marketing / pitch site for **AxonBox**. Independent of the product app.
+Standalone marketing / pitch site for **AxonCase**. Independent of the product app.
 
 | Site | Host | URL |
 |---|---|---|

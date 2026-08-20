@@ -192,7 +192,7 @@ export default function HomePage() {
               {/* eslint-disable-next-line @next/next/no-img-element */}
               <img
                 src="/media/fig-05-1-overview.png"
-                alt="AxonBox Overview"
+                alt="AxonCase overview"
                 className="w-full object-cover object-top"
               />
               <figcaption className="border-t border-[var(--axon-line)] px-4 py-3 text-sm text-[var(--axon-steel)]">
@@ -203,7 +203,7 @@ export default function HomePage() {
               {/* eslint-disable-next-line @next/next/no-img-element */}
               <img
                 src="/media/fig-08-2-detail.png"
-                alt="AxonBox Case detail"
+                alt="Case detail"
                 className="w-full object-cover object-top"
               />
               <figcaption className="border-t border-[var(--axon-line)] px-4 py-3 text-sm text-[var(--axon-steel)]">
@@ -214,7 +214,7 @@ export default function HomePage() {
               {/* eslint-disable-next-line @next/next/no-img-element */}
               <img
                 src="/media/fig-11-1-evidence.png"
-                alt="AxonBox Evidence gallery"
+                alt="Evidence gallery"
                 className="w-full object-cover object-top"
               />
               <figcaption className="border-t border-[var(--axon-line)] px-4 py-3 text-sm text-[var(--axon-steel)]">
